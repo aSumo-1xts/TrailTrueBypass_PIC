@@ -4962,7 +4962,7 @@
 		)
 		(uuid "b3111be6-110b-4d07-af6e-178b0baccfa2")
 	)
-	(text "(PIC) Micro controller"
+	(text "PIC Micro controller"
 		(exclude_from_sim no)
 		(at 91.948 171.704 0)
 		(effects
