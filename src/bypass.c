@@ -12,13 +12,13 @@
 //! 関数として書くと割り込み処理の中から呼ぶとき良くないらしいので、マクロで回避
 #define TURN()       \
   do {               \
-    GIE = 0;         \
+    di();            \
     if (isTrail) {   \
       TURN_Trail();  \
     } else {         \
       TURN_Normal(); \
     }                \
-    GIE = 1;         \
+    ei();            \
   } while (false)
 
 //! トレイルモード時のTURN()
@@ -51,12 +51,12 @@
  * @details 通常モードからトレイルモードに切り替える関数
  */
 void transfer() {
-  GIE = 0;             // 割り込み禁止
+  di();                // 割り込み禁止
   Relay01 = !Relay01;  // Relay01の状態を反転する
   waitRelay();         // Relay01の動作を待つ
   Relay02 = !Relay02;  // Relay02の状態を反転する
   waitRelay();         // Relay02の動作を待つ
-  GIE = 1;             // 割り込み許可
+  ei();                // 割り込み許可
 }
 
 bool state = false;          //!< ペダルの状態（現状では不要）
@@ -75,7 +75,7 @@ void bypass() {
     TURN();         // 手動でひっくり返しておく
   }
 
-  GIE = 1;  // ここで割り込みを許可
+  ei();  // ここで割り込みを許可
 
   while (true) {          // ループ開始時点では通常モードであることに注意！
     if (!ModeSwitch) {    // ModeSwitchが倒されている

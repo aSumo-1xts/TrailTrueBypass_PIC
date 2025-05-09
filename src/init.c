@@ -84,7 +84,7 @@ void eepWrite(uint8_t adress, uint8_t myData) {
  * @brief   諸々の初期化を行う関数
  */
 void init() {
-  GIE = 0;  // 念のため割り込みを禁止しておく
+  di();  // 念のため割り込みを禁止しておく
 
   int flag_i = 0;  // forループ用のカウンタはuint8_tだとまずいらしい
 
