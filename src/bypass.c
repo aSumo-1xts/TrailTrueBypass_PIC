@@ -59,11 +59,11 @@ void transfer() {
   GIE = 1;             // 割り込み許可
 }
 
-bool state = false;      //!< ペダルの状態（現状では不要）
-bool flag1 = true;       //!< 反転フラグ（モーメンタリ用）
-bool flag2 = true;       //!< 反転フラグ（オルタネイト用）
-bool isTrail = false;    //!< トレイルモードのフラグ
-bool is1stTrail = true;  //!< フラグが切り替わって最初のループかどうか
+bool state = false;          //!< ペダルの状態（現状では不要）
+bool flag_momentary = true;  //!< 反転フラグ（モーメンタリ用）
+bool flag_alternate = true;  //!< 反転フラグ（オルタネイト用）
+bool isTrail = false;        //!< トレイルモードのフラグ
+bool is1stTrail = true;      //!< フラグが切り替わって最初のループかどうか
 
 /**
  * @fn      void bypass(void)
@@ -112,23 +112,23 @@ void bypass() {
 void __interrupt() isr(void) {
   if (GPIF) {  // GPIO変化割り込みフラグが立っているか？
     waitChattering();
-    if (GPIF) {             // 本当に立っているか？
-      GPIF = 0;             // 割り込みフラグをクリア
-      if (momentary) {      // モーメンタリ動作ならば
-        TURN();             // ひっくり返す
-      } else {              // オルタネイト動作ならば
-        if (!FootSwitch) {  // フットスイッチが踏まれているか？
-          if (flag2) {      // フラグが立っているならば
-            if (timing) {   // タイミングの指定によっては離されるまで待つ
+    if (GPIF) {                  // 本当に立っているか？
+      GPIF = 0;                  // 割り込みフラグをクリア
+      if (momentary) {           // モーメンタリ動作ならば
+        TURN();                  // ひっくり返す
+      } else {                   // オルタネイト動作ならば
+        if (!FootSwitch) {       // フットスイッチが踏まれているか？
+          if (flag_alternate) {  // フラグが立っているならば
+            if (timing) {        // タイミングの指定によっては離されるまで待つ
               while (!FootSwitch) {
                 ;  // 離されるまでキープ
               }
             }
-            TURN();         // ひっくり返す
-            flag2 = false;  // 反転フラグをクリア
+            TURN();                  // ひっくり返す
+            flag_alternate = false;  // 反転フラグをクリア
           }
-        } else {         // フットスイッチが離されているか？
-          flag2 = true;  // 反転フラグを立てる
+        } else {                  // フットスイッチが離されているか？
+          flag_alternate = true;  // 反転フラグを立てる
         }
       }
     }
