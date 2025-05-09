@@ -4,3 +4,4 @@ cmake/PIC12F675/default/.generated
 out/
 docs/
 MPLABXLog.xml
+delete_me.*
