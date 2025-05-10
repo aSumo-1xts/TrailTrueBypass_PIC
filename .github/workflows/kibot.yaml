@@ -8,6 +8,7 @@ on:
       - "KiCad/**/*.kicad_sch"
       - "KiCad/**/*.kicad_pcb"
       - "KiCad/**/*.yaml"
+      - ".github/workflows/kibot.yaml"
 
 jobs:
   generate-output:

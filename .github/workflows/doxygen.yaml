@@ -8,6 +8,7 @@ on:
       - "src/**/*.c"
       - "src/**/*.h"
       - "Doxyfile"
+      - ".github/workflows/doxygen.yaml"
 
 jobs:
   deploy:
