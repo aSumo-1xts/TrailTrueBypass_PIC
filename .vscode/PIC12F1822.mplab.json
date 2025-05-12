@@ -1,0 +1,38 @@
+{
+    "version": "1.4",
+    "configurations": [
+        {
+            "name": "default",
+            "id": "conf1",
+            "device": "PIC12F1822",
+            "imagePath": "./out/PIC12F1822/default.elf",
+            "packs": [
+                {
+                    "name": "PIC12-16F1xxx_DFP",
+                    "vendor": "Microchip",
+                    "version": "1.8.254"
+                }
+            ],
+            "fileSet": "default",
+            "toolchain": "default-XC8"
+        }
+    ],
+    "propertyGroups": [
+        {
+            "name": "default-XC8",
+            "type": "toolchain",
+            "provider": "microchip.toolchains:xc8@3.00",
+            "properties": {}
+        }
+    ],
+    "fileSets": [
+        {
+            "name": "default",
+            "files": [
+                {
+                    "include": "src/*|src/PIC12F1822/**"
+                }
+            ]
+        }
+    ]
+}

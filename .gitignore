@@ -1,6 +1,7 @@
 _build/
 cmake/PIC12F629/default/.generated
 cmake/PIC12F675/default/.generated
+cmake/PIC12F1822/default/.generated
 out/
 docs/
 MPLABXLog.xml
