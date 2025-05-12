@@ -1,0 +1,4 @@
+<map id="flashLED" name="flashLED">
+<area shape="rect" id="node1" title="LEDを点滅させる関数" alt="" coords="151,5,229,31"/>
+<area shape="rect" id="node2" href="$common_8c.html#a70f6100e4f948b633c942e5c6e4c209a" title="アナログ機能を無効化する関数" alt="" coords="5,5,103,31"/>
+</map>

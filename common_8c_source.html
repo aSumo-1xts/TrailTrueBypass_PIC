@@ -136,7 +136,7 @@ $(document).ready(function(){initNavTree('common_8c_source.html',''); initResiza
 </div><!--header-->
 <div class="contents">
 <a href="common_8c.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;header.h&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="header_8h.html">header.h</a>&quot;</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="common_8c.html#a3e1381e5466d1aefd152465cd1bf4c14">   12</a></span><span class="keywordtype">bool</span> <a class="code hl_variable" href="common_8c.html#a3e1381e5466d1aefd152465cd1bf4c14">isTrail</a> = <span class="keyword">false</span>;        </div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="common_8c.html#a21749b68319224c18f141b2cca0dc129">   13</a></span><span class="keywordtype">bool</span> <a class="code hl_variable" href="common_8c.html#a21749b68319224c18f141b2cca0dc129">flag_alternate</a> = <span class="keyword">true</span>;  </div>
@@ -179,16 +179,16 @@ $(document).ready(function(){initNavTree('common_8c_source.html',''); initResiza
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordflow">switch</span> (interval) {</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>      <span class="keywordflow">case</span> 1:</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        LED = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        __delay_ms(interval_short);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        __delay_ms(<a class="code hl_define" href="header_8h.html#a77dd9c9ef5368b27b5577afa38bb8627">interval_short</a>);</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        LED = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        __delay_ms(interval_short);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        __delay_ms(<a class="code hl_define" href="header_8h.html#a77dd9c9ef5368b27b5577afa38bb8627">interval_short</a>);</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>      <span class="keywordflow">case</span> 2:</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        LED = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        __delay_ms(interval_long);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        __delay_ms(<a class="code hl_define" href="header_8h.html#a27d6aef482f400331f2da74532110b21">interval_long</a>);</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        LED = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        __delay_ms(interval_long);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        __delay_ms(<a class="code hl_define" href="header_8h.html#a27d6aef482f400331f2da74532110b21">interval_long</a>);</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>      <span class="keywordflow">default</span>:</div>
@@ -210,13 +210,13 @@ $(document).ready(function(){initNavTree('common_8c_source.html',''); initResiza
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  <span class="keywordtype">int</span> flag_i = 0;  <span class="comment">// 踏まれている時間をカウントする変数</span></div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>  <span class="comment">// EEPROMからuint8_t型をbool型に変換して読み込む（0:false / 1:true）</span></div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>  initState = (bool)(eepRead(eepAdd_initState));</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>  momentary = (bool)(eepRead(eepAdd_momentary));</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>  timing = (bool)(eepRead(eepAdd_timing));</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>  initState = (bool)(eepRead(<a class="code hl_define" href="header_8h.html#ab41963bb62d9c5697770e6849b1bfb4e">eepAdd_initState</a>));</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>  momentary = (bool)(eepRead(<a class="code hl_define" href="header_8h.html#acb9b45a64797533addac87da1efa4688">eepAdd_momentary</a>));</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>  timing = (bool)(eepRead(<a class="code hl_define" href="header_8h.html#af104142f2fe66a6c5b5c298806d5250f">eepAdd_timing</a>));</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>  <span class="comment">// 踏みながら電源を入れてモード切り替え</span></div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>  <span class="keywordflow">if</span> (!FootSwitch) {</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    waitChattering();</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <a class="code hl_define" href="header_8h.html#a9f02c088f6e4d8cd8e8a87b4042d024a">waitChattering</a>();</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="keywordflow">if</span> (!FootSwitch) {  <span class="comment">// surely pressed</span></div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>      <a class="code hl_function" href="common_8c.html#ab1be8587a70ecef36ec9bc5afc406df8">flashLED</a>(1, 3);</div>
@@ -227,7 +227,7 @@ $(document).ready(function(){initNavTree('common_8c_source.html',''); initResiza
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>          __delay_ms(10);          <span class="comment">// 踏まれている間は待ち続ける</span></div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        } <span class="keywordflow">else</span> {                   <span class="comment">// 離されたら</span></div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>          momentary = !momentary;  <span class="comment">// 論理反転</span></div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>          eepWrite(eepAdd_momentary, (uint8_t)momentary);  <span class="comment">// EEPROMに書き込む</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>          eepWrite(<a class="code hl_define" href="header_8h.html#acb9b45a64797533addac87da1efa4688">eepAdd_momentary</a>, (uint8_t)momentary);  <span class="comment">// EEPROMに書き込む</span></div>
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>          <span class="keywordflow">break</span>;  <span class="comment">// forループごと抜ける</span></div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        }</div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>      }</div>
@@ -236,7 +236,7 @@ $(document).ready(function(){initNavTree('common_8c_source.html',''); initResiza
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>      <span class="keywordflow">if</span> (flag_i &gt; 275) {</div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        <span class="comment">// initStateの設定に入る</span></div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        initState = !initState;  <span class="comment">// 論理反転</span></div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        eepWrite(eepAdd_initState,</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        eepWrite(<a class="code hl_define" href="header_8h.html#ab41963bb62d9c5697770e6849b1bfb4e">eepAdd_initState</a>,</div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>                 (uint8_t)initState);  <span class="comment">// EEPROMに書き込む</span></div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        <a class="code hl_function" href="common_8c.html#ab1be8587a70ecef36ec9bc5afc406df8">flashLED</a>(2, 3);                <span class="comment">// initState設定完了！</span></div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        <span class="keywordflow">while</span> (!FootSwitch) {</div>
@@ -245,16 +245,16 @@ $(document).ready(function(){initNavTree('common_8c_source.html',''); initResiza
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>      }</div>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    }</div>
 <div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    waitChattering();</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    <a class="code hl_define" href="header_8h.html#a9f02c088f6e4d8cd8e8a87b4042d024a">waitChattering</a>();</div>
 <div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>  }</div>
 <div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>}</div>
 <div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno"><a class="line" href="common_8c.html#ae04a2a5b35cc7954e3286d34c4766b74">  146</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="common_8c.html#ae04a2a5b35cc7954e3286d34c4766b74">transfer</a>() {</div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>  di();                <span class="comment">// 割り込み禁止</span></div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>  Relay01 = !Relay01;  <span class="comment">// Relay01の状態を反転する</span></div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>  waitRelay();         <span class="comment">// Relay01の動作を待つ</span></div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>  <a class="code hl_define" href="header_8h.html#ac71e36f5dca9da2efcd156a9b111baa7">waitRelay</a>();         <span class="comment">// Relay01の動作を待つ</span></div>
 <div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>  Relay02 = !Relay02;  <span class="comment">// Relay02の状態を反転する</span></div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>  waitRelay();         <span class="comment">// Relay02の動作を待つ</span></div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>  <a class="code hl_define" href="header_8h.html#ac71e36f5dca9da2efcd156a9b111baa7">waitRelay</a>();         <span class="comment">// Relay02の動作を待つ</span></div>
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>  ei();                <span class="comment">// 割り込み許可</span></div>
 <div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>}</div>
 <div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
@@ -269,7 +269,7 @@ $(document).ready(function(){initNavTree('common_8c_source.html',''); initResiza
 <div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
 <div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>  <span class="keywordflow">while</span> (<span class="keyword">true</span>) {               <span class="comment">// ループ開始時点では通常モードであることに注意！</span></div>
 <div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    <span class="keywordflow">if</span> (!ModeSwitch) {         <span class="comment">// ModeSwitchが倒されている</span></div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>      waitChattering();        <span class="comment">// 本当に倒されているか？</span></div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>      <a class="code hl_define" href="header_8h.html#a9f02c088f6e4d8cd8e8a87b4042d024a">waitChattering</a>();        <span class="comment">// 本当に倒されているか？</span></div>
 <div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>      <span class="keywordflow">if</span> (!ModeSwitch) {       <span class="comment">// 倒されている！</span></div>
 <div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>        <a class="code hl_variable" href="common_8c.html#a3e1381e5466d1aefd152465cd1bf4c14">isTrail</a> = <span class="keyword">true</span>;        <span class="comment">// とにかくトレイルモードにする</span></div>
 <div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>        <span class="keywordflow">if</span> (is1stTrail) {      <span class="comment">// 初回のみ</span></div>
@@ -278,7 +278,7 @@ $(document).ready(function(){initNavTree('common_8c_source.html',''); initResiza
 <div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>        }</div>
 <div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>      }</div>
 <div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    } <span class="keywordflow">else</span> {                  <span class="comment">// ModeSwitchが倒されていない</span></div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>      waitChattering();       <span class="comment">// 本当に倒されていないか？</span></div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>      <a class="code hl_define" href="header_8h.html#a9f02c088f6e4d8cd8e8a87b4042d024a">waitChattering</a>();       <span class="comment">// 本当に倒されていないか？</span></div>
 <div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>      <span class="keywordflow">if</span> (ModeSwitch) {       <span class="comment">// 倒されていない</span></div>
 <div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>        <a class="code hl_variable" href="common_8c.html#a3e1381e5466d1aefd152465cd1bf4c14">isTrail</a> = <span class="keyword">false</span>;      <span class="comment">// とにかく通常モードにする</span></div>
 <div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>        <span class="keywordflow">if</span> (!is1stTrail) {    <span class="comment">// 初回のみ</span></div>
@@ -291,7 +291,7 @@ $(document).ready(function(){initNavTree('common_8c_source.html',''); initResiza
 <div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>}</div>
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span> </div>
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno"><a class="line" href="common_8c.html#a450f740567f3511eb4075639ee9126db">  197</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="common_8c.html#a450f740567f3511eb4075639ee9126db">insideISR</a>(<span class="keywordtype">void</span>) {</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>  waitChattering();</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>  <a class="code hl_define" href="header_8h.html#a9f02c088f6e4d8cd8e8a87b4042d024a">waitChattering</a>();</div>
 <div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span> </div>
 <div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>  <span class="keywordflow">if</span> (!FootSwitch) {  <span class="comment">// 踏まれているか？</span></div>
 <div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    <span class="keywordflow">if</span> (momentary) {  <span class="comment">// モーメンタリ動作ならば</span></div>
@@ -319,6 +319,14 @@ $(document).ready(function(){initNavTree('common_8c_source.html',''); initResiza
 <div class="ttc" id="acommon_8c_html_aa8c277fdab0cc5bc32555aa51957f23b"><div class="ttname"><a href="common_8c.html#aa8c277fdab0cc5bc32555aa51957f23b">disAnalog</a></div><div class="ttdeci">void disAnalog(void)</div><div class="ttdoc">アナログ機能を無効化する関数</div><div class="ttdef"><b>Definition:</b> <a href="common_8c_source.html#l00085">common.c:85</a></div></div>
 <div class="ttc" id="acommon_8c_html_ab1be8587a70ecef36ec9bc5afc406df8"><div class="ttname"><a href="common_8c.html#ab1be8587a70ecef36ec9bc5afc406df8">flashLED</a></div><div class="ttdeci">void flashLED(uint8_t interval, uint8_t times)</div><div class="ttdoc">LEDを点滅させる関数</div><div class="ttdef"><b>Definition:</b> <a href="common_8c_source.html#l00057">common.c:57</a></div></div>
 <div class="ttc" id="acommon_8c_html_ae04a2a5b35cc7954e3286d34c4766b74"><div class="ttname"><a href="common_8c.html#ae04a2a5b35cc7954e3286d34c4766b74">transfer</a></div><div class="ttdeci">void transfer()</div><div class="ttdoc">通常モードからトレイルモードに切り替える関数</div><div class="ttdef"><b>Definition:</b> <a href="common_8c_source.html#l00146">common.c:146</a></div></div>
+<div class="ttc" id="aheader_8h_html"><div class="ttname"><a href="header_8h.html">header.h</a></div></div>
+<div class="ttc" id="aheader_8h_html_a27d6aef482f400331f2da74532110b21"><div class="ttname"><a href="header_8h.html#a27d6aef482f400331f2da74532110b21">interval_long</a></div><div class="ttdeci">#define interval_long</div><div class="ttdef"><b>Definition:</b> <a href="header_8h_source.html#l00019">header.h:19</a></div></div>
+<div class="ttc" id="aheader_8h_html_a77dd9c9ef5368b27b5577afa38bb8627"><div class="ttname"><a href="header_8h.html#a77dd9c9ef5368b27b5577afa38bb8627">interval_short</a></div><div class="ttdeci">#define interval_short</div><div class="ttdef"><b>Definition:</b> <a href="header_8h_source.html#l00018">header.h:18</a></div></div>
+<div class="ttc" id="aheader_8h_html_a9f02c088f6e4d8cd8e8a87b4042d024a"><div class="ttname"><a href="header_8h.html#a9f02c088f6e4d8cd8e8a87b4042d024a">waitChattering</a></div><div class="ttdeci">#define waitChattering()</div><div class="ttdef"><b>Definition:</b> <a href="header_8h_source.html#l00008">header.h:8</a></div></div>
+<div class="ttc" id="aheader_8h_html_ab41963bb62d9c5697770e6849b1bfb4e"><div class="ttname"><a href="header_8h.html#ab41963bb62d9c5697770e6849b1bfb4e">eepAdd_initState</a></div><div class="ttdeci">#define eepAdd_initState</div><div class="ttdef"><b>Definition:</b> <a href="header_8h_source.html#l00014">header.h:14</a></div></div>
+<div class="ttc" id="aheader_8h_html_ac71e36f5dca9da2efcd156a9b111baa7"><div class="ttname"><a href="header_8h.html#ac71e36f5dca9da2efcd156a9b111baa7">waitRelay</a></div><div class="ttdeci">#define waitRelay()</div><div class="ttdef"><b>Definition:</b> <a href="header_8h_source.html#l00011">header.h:11</a></div></div>
+<div class="ttc" id="aheader_8h_html_acb9b45a64797533addac87da1efa4688"><div class="ttname"><a href="header_8h.html#acb9b45a64797533addac87da1efa4688">eepAdd_momentary</a></div><div class="ttdeci">#define eepAdd_momentary</div><div class="ttdef"><b>Definition:</b> <a href="header_8h_source.html#l00015">header.h:15</a></div></div>
+<div class="ttc" id="aheader_8h_html_af104142f2fe66a6c5b5c298806d5250f"><div class="ttname"><a href="header_8h.html#af104142f2fe66a6c5b5c298806d5250f">eepAdd_timing</a></div><div class="ttdeci">#define eepAdd_timing</div><div class="ttdef"><b>Definition:</b> <a href="header_8h_source.html#l00016">header.h:16</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
