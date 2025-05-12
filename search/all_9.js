@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['transfer_0',['transfer',['../common_8c.html#ae04a2a5b35cc7954e3286d34c4766b74',1,'transfer():&#160;common.c'],['../header_8h.html#a991e8c8589b8377990d24acaf21e1fec',1,'transfer(void):&#160;common.c']]],
-  ['turn_1',['TURN',['../common_8c.html#a3d0ab3251571f6ece321c2cbab8f5cb7',1,'common.c']]],
-  ['turn_5fnormal_2',['TURN_Normal',['../common_8c.html#a1cfedb3b64990b7492f85a4f3dccc359',1,'common.c']]],
-  ['turn_5ftrail_3',['TURN_Trail',['../common_8c.html#a457d0931346743d9fd75b2e22cce594b',1,'common.c']]]
+  ['main_0',['main',['../main_8c.html#a6288eba0f8e8ad3ab1544ad731eb7667',1,'main.c']]],
+  ['main_2ec_1',['main.c',['../main_8c.html',1,'']]],
+  ['modeswitch_2',['ModeSwitch',['../PIC12F6XX_8h.html#ab60fac18c8af413fb2566dad68970f78',1,'PIC12F6XX.h']]],
+  ['momentary_3',['momentary',['../PIC12F6XX_8c.html#ad721e42675ab53a59213ba54882e3e0a',1,'momentary():&#160;PIC12F6XX.c'],['../PIC12F6XX_8h.html#ad721e42675ab53a59213ba54882e3e0a',1,'momentary():&#160;PIC12F6XX.c']]]
 ];

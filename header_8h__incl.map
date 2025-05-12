@@ -1,7 +1,7 @@
 <map id="header.h" name="header.h">
-<area shape="rect" id="node1" title=" " alt="" coords="150,5,229,31"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,79,88,104"/>
-<area shape="rect" id="node3" title=" " alt="" coords="113,79,183,104"/>
-<area shape="rect" id="node4" title=" " alt="" coords="207,79,257,104"/>
-<area shape="rect" id="node5" title=" " alt="" coords="281,79,469,104"/>
+<area shape="rect" id="node1" title=" " alt="" coords="165,5,243,31"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,152,88,177"/>
+<area shape="rect" id="node3" title=" " alt="" coords="127,152,198,177"/>
+<area shape="rect" id="node4" title=" " alt="" coords="271,152,321,177"/>
+<area shape="rect" id="node5" href="$PIC12F6XX_8h.html" title=" " alt="" coords="45,79,233,104"/>
 </map>

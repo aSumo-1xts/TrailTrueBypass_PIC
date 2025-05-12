@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['turn_0',['TURN',['../common_8c.html#a3d0ab3251571f6ece321c2cbab8f5cb7',1,'common.c']]],
-  ['turn_5fnormal_1',['TURN_Normal',['../common_8c.html#a1cfedb3b64990b7492f85a4f3dccc359',1,'common.c']]],
-  ['turn_5ftrail_2',['TURN_Trail',['../common_8c.html#a457d0931346743d9fd75b2e22cce594b',1,'common.c']]]
+  ['footswitch_0',['FootSwitch',['../PIC12F6XX_8h.html#a83eeb315c9d0509c9dfbff4ee9d06ad0',1,'PIC12F6XX.h']]]
 ];

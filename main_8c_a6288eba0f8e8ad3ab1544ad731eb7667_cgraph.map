@@ -1,5 +1,11 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title="サボり上司" alt="" coords="5,5,60,31"/>
+<area shape="rect" id="node1" title="サボり上司" alt="" coords="5,31,60,56"/>
 <area shape="rect" id="node2" href="$common_8c.html#a4505492b0d75bf74b7ad9d14e2850c9e" title="バイパスの挙動を定義する関数" alt="" coords="108,5,176,31"/>
-<area shape="rect" id="node3" href="$common_8c.html#ae04a2a5b35cc7954e3286d34c4766b74" title="通常モードからトレイルモードに切り替える関数" alt="" coords="224,5,297,31"/>
+<area shape="rect" id="node4" href="$PIC12F6XX_8c.html#a02fd73d861ef2e4aabb38c0c9ff82947" title=" " alt="" coords="121,55,163,80"/>
+<area shape="rect" id="node3" href="$common_8c.html#ae04a2a5b35cc7954e3286d34c4766b74" title="通常モードからトレイルモードに切り替える関数" alt="" coords="236,5,309,31"/>
+<area shape="rect" id="node5" href="$common_8c.html#aa8c277fdab0cc5bc32555aa51957f23b" title="アナログ機能を無効化する関数" alt="" coords="229,55,316,80"/>
+<area shape="rect" id="node6" href="$common_8c.html#a70f6100e4f948b633c942e5c6e4c209a" title="アナログ機能を無効化する関数" alt="" coords="224,104,321,129"/>
+<area shape="rect" id="node7" href="$PIC12F6XX_8c.html#a6933d56410a79bc99303c7f4f54521ca" title="EEPROMからデータを読み込む関数" alt="" coords="371,55,449,80"/>
+<area shape="rect" id="node8" href="$PIC12F6XX_8c.html#a64719dac9a22c3c4752c799ffc69b25a" title="EEPROMにデータを書き込む関数" alt="" coords="369,104,451,129"/>
+<area shape="rect" id="node9" href="$common_8c.html#ab1be8587a70ecef36ec9bc5afc406df8" title="LEDを点滅させる関数" alt="" coords="371,153,449,179"/>
 </map>
