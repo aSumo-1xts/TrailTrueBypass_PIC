@@ -30,8 +30,7 @@
             "name": "default",
             "files": [
                 {
-                    "include": "**/*",
-                    "exclude": "**/(_build|out|cmake|.vscode)/**/*"
+                    "include": "src/*|src/PIC12F6XX/**"
                 }
             ]
         }
