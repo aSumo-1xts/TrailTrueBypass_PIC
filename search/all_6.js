@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['state_0',['state',['../bypass_8c.html#ab30ba07e2a0bd07a15e45a92c32db9c5',1,'bypass.c']]]
+  ['setinitstate_0',['setInitState',['../common_8c.html#a70f6100e4f948b633c942e5c6e4c209a',1,'common.c']]]
 ];

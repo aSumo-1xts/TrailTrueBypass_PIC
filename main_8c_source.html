@@ -136,19 +136,16 @@ $(document).ready(function(){initNavTree('main_8c_source.html',''); initResizabl
 </div><!--header-->
 <div class="contents">
 <a href="main_8c.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;TrailBypass_PIC12F6XX.h&quot;</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="main_8c.html#aee16cfba866ffa8dfc54d80de237d055">   14</a></span><a class="code hl_function" href="main_8c.html#aee16cfba866ffa8dfc54d80de237d055">__EEPROM_DATA</a>(0, 0, 0, 0, 0, 0, 0, 0);</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="main_8c.html#a6288eba0f8e8ad3ab1544ad731eb7667">   20</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="main_8c.html#a6288eba0f8e8ad3ab1544ad731eb7667">main</a>(<span class="keywordtype">void</span>) {</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  <a class="code hl_function" href="init_8c.html#a02fd73d861ef2e4aabb38c0c9ff82947">init</a>();</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  <a class="code hl_function" href="bypass_8c.html#a4505492b0d75bf74b7ad9d14e2850c9e">bypass</a>();</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>}</div>
-<div class="ttc" id="abypass_8c_html_a4505492b0d75bf74b7ad9d14e2850c9e"><div class="ttname"><a href="bypass_8c.html#a4505492b0d75bf74b7ad9d14e2850c9e">bypass</a></div><div class="ttdeci">void bypass()</div><div class="ttdoc">バイパスの挙動を定義する関数</div><div class="ttdef"><b>Definition:</b> <a href="bypass_8c_source.html#l00073">bypass.c:73</a></div></div>
-<div class="ttc" id="ainit_8c_html_a02fd73d861ef2e4aabb38c0c9ff82947"><div class="ttname"><a href="init_8c.html#a02fd73d861ef2e4aabb38c0c9ff82947">init</a></div><div class="ttdeci">void init()</div><div class="ttdoc">諸々の初期化を行う関数</div><div class="ttdef"><b>Definition:</b> <a href="init_8c_source.html#l00086">init.c:86</a></div></div>
-<div class="ttc" id="amain_8c_html_a6288eba0f8e8ad3ab1544ad731eb7667"><div class="ttname"><a href="main_8c.html#a6288eba0f8e8ad3ab1544ad731eb7667">main</a></div><div class="ttdeci">int main(void)</div><div class="ttdoc">サボり上司</div><div class="ttdef"><b>Definition:</b> <a href="main_8c_source.html#l00020">main.c:20</a></div></div>
-<div class="ttc" id="amain_8c_html_aee16cfba866ffa8dfc54d80de237d055"><div class="ttname"><a href="main_8c.html#aee16cfba866ffa8dfc54d80de237d055">__EEPROM_DATA</a></div><div class="ttdeci">__EEPROM_DATA(0, 0, 0, 0, 0, 0, 0, 0)</div><div class="ttdoc">EEPROM（0x00~0x07）の初期値を定義するマクロ</div></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;header.h&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="main_8c.html#a6288eba0f8e8ad3ab1544ad731eb7667">   16</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="main_8c.html#a6288eba0f8e8ad3ab1544ad731eb7667">main</a>(<span class="keywordtype">void</span>) {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  init();</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  <a class="code hl_function" href="common_8c.html#a4505492b0d75bf74b7ad9d14e2850c9e">bypass</a>();</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>}</div>
+<div class="ttc" id="acommon_8c_html_a4505492b0d75bf74b7ad9d14e2850c9e"><div class="ttname"><a href="common_8c.html#a4505492b0d75bf74b7ad9d14e2850c9e">bypass</a></div><div class="ttdeci">void bypass()</div><div class="ttdoc">バイパスの挙動を定義する関数</div><div class="ttdef"><b>Definition:</b> <a href="common_8c_source.html#l00161">common.c:161</a></div></div>
+<div class="ttc" id="amain_8c_html_a6288eba0f8e8ad3ab1544ad731eb7667"><div class="ttname"><a href="main_8c.html#a6288eba0f8e8ad3ab1544ad731eb7667">main</a></div><div class="ttdeci">int main(void)</div><div class="ttdoc">サボり上司</div><div class="ttdef"><b>Definition:</b> <a href="main_8c_source.html#l00016">main.c:16</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

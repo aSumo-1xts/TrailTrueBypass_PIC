@@ -39,7 +39,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"TrailBypass__PIC12F6XX_8h_source.html"
+"common_8c.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

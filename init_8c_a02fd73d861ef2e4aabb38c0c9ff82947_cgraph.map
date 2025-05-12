@@ -1,6 +1,0 @@
-<map id="init" name="init">
-<area shape="rect" id="node1" title="諸々の初期化を行う関数" alt="" coords="5,55,48,80"/>
-<area shape="rect" id="node2" href="$init_8c.html#a6933d56410a79bc99303c7f4f54521ca" title="EEPROMからデータを読み込む関数" alt="" coords="97,5,176,31"/>
-<area shape="rect" id="node3" href="$init_8c.html#a64719dac9a22c3c4752c799ffc69b25a" title="EEPROMにデータを書き込む関数" alt="" coords="96,55,177,80"/>
-<area shape="rect" id="node4" href="$init_8c.html#ab1be8587a70ecef36ec9bc5afc406df8" title="アナログ機能を無効化する関数" alt="" coords="97,104,176,129"/>
-</map>
