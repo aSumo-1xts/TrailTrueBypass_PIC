@@ -142,19 +142,19 @@ $(document).ready(function(){initNavTree('header_8h_source.html',''); initResiza
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;./PIC12F6XX/PIC12F6XX.h&quot;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">// その他ハードウェアに関する設定</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="header_8h.html#a9f02c088f6e4d8cd8e8a87b4042d024a">    8</a></span><span class="preprocessor">#define waitChattering() __delay_ms(5)  </span><span class="comment">// 長くとも数十 [ms] らしい</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="header_8h.html#a707b7c453fdbfa865fd6e2a11395b2ce">    9</a></span><span class="preprocessor">#define waitPhotoCoupler() \</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">  __delay_us(5)                    </span><span class="comment">// PC817なら上昇時間4 [us] / 下降時間3 [us]</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="header_8h.html#ac71e36f5dca9da2efcd156a9b111baa7">   11</a></span><span class="preprocessor">#define waitRelay() __delay_ms(2)  </span><span class="comment">// AZ850なら動作時間2 [ms] / 復帰時間1 [ms]</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="header_8h.html#a9f02c088f6e4d8cd8e8a87b4042d024a">    8</a></span><span class="preprocessor">#define waitChattering() __delay_ms(5)  </span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#define waitPhotoCoupler() \</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">  __delay_us(5)                    </span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="header_8h.html#a707b7c453fdbfa865fd6e2a11395b2ce">   11</a></span><span class="preprocessor">#define waitRelay() __delay_ms(2)  </span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="header_8h.html#ac71e36f5dca9da2efcd156a9b111baa7">   12</a></span> </div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">// その他EEPROM関連</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="header_8h.html#ab41963bb62d9c5697770e6849b1bfb4e">   14</a></span><span class="preprocessor">#define eepAdd_initState 0x00  </span><span class="comment">// アドレスその1</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="header_8h.html#acb9b45a64797533addac87da1efa4688">   15</a></span><span class="preprocessor">#define eepAdd_momentary 0x02  </span><span class="comment">// アドレスその2</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="header_8h.html#af104142f2fe66a6c5b5c298806d5250f">   16</a></span><span class="preprocessor">#define eepAdd_timing 0x04     </span><span class="comment">// アドレスその3</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="header_8h.html#a77dd9c9ef5368b27b5577afa38bb8627">   18</a></span><span class="preprocessor">#define interval_short 50  </span><span class="comment">// LED用のインターバル [ms]</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="header_8h.html#a27d6aef482f400331f2da74532110b21">   19</a></span><span class="preprocessor">#define interval_long 150  </span><span class="comment">// LED用のインターバル [ms]</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#define eepAdd_initState 0x00  </span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="header_8h.html#ab41963bb62d9c5697770e6849b1bfb4e">   15</a></span><span class="preprocessor">#define eepAdd_momentary 0x02  </span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="header_8h.html#acb9b45a64797533addac87da1efa4688">   16</a></span><span class="preprocessor">#define eepAdd_timing 0x04     </span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="header_8h.html#af104142f2fe66a6c5b5c298806d5250f">   17</a></span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#define interval_short 50  </span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="header_8h.html#a77dd9c9ef5368b27b5577afa38bb8627">   19</a></span><span class="preprocessor">#define interval_long 150  </span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="header_8h.html#a27d6aef482f400331f2da74532110b21">   20</a></span> </div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">// プロトタイプ宣言</span></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keywordtype">void</span> <a class="code hl_function" href="header_8h.html#aa8c277fdab0cc5bc32555aa51957f23b">disAnalog</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keywordtype">void</span> <a class="code hl_function" href="header_8h.html#ab1be8587a70ecef36ec9bc5afc406df8">flashLED</a>(uint8_t interval, uint8_t times);</div>
