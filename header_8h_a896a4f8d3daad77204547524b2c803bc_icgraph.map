@@ -1,0 +1,10 @@
+<map id="waitChattering" name="waitChattering">
+<area shape="rect" id="node1" title=" " alt="" coords="403,55,521,80"/>
+<area shape="rect" id="node2" href="$common_8c.html#a450f740567f3511eb4075639ee9126db" title="割り込み中に実行される関数" alt="" coords="260,5,343,31"/>
+<area shape="rect" id="node4" href="$common_8c.html#a7ee3eeaca131e64d4a618e155ed0c650" title="モードスイッチをスキャンして、適宜モードを切り替える関数" alt="" coords="248,55,355,80"/>
+<area shape="rect" id="node7" href="$common_8c.html#a70f6100e4f948b633c942e5c6e4c209a" title="アナログ機能を無効化する関数" alt="" coords="253,104,350,129"/>
+<area shape="rect" id="node3" href="$PIC12F6XX_8c.html#a4e0a46b9474f02713855286ac17dac6d" title=" " alt="" coords="108,5,200,31"/>
+<area shape="rect" id="node5" href="$common_8c.html#a4505492b0d75bf74b7ad9d14e2850c9e" title="バイパスの挙動を定義する関数" alt="" coords="120,55,188,80"/>
+<area shape="rect" id="node6" href="$main_8c.html#a6288eba0f8e8ad3ab1544ad731eb7667" title="サボり上司" alt="" coords="5,80,60,105"/>
+<area shape="rect" id="node8" href="$PIC12F6XX_8c.html#a02fd73d861ef2e4aabb38c0c9ff82947" title=" " alt="" coords="133,104,175,129"/>
+</map>
