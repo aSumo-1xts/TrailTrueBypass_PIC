@@ -1,0 +1,29 @@
+name: KiBot
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "KiCad/**/*.kicad_sch"
+      - "KiCad/**/*.kicad_pcb"
+      - "KiCad/**/*.yaml"
+      - ".github/workflows/kibot.yaml"
+
+jobs:
+  generate-output:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4.2.2
+      - uses: INTI-CMNB/KiBot@v2_k9
+        with:
+          config: KiCad/KiBot/config.yaml
+          dir: output
+          schema: KiCad/TrailTrueBypass_PIC.kicad_sch
+          board: KiCad/TrailTrueBypass_PIC.kicad_pcb
+      - name: upload results
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: gerber-and-docs
+          path: output

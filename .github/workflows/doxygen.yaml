@@ -1,0 +1,22 @@
+name: Doxygen
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "src/**/*.c"
+      - "src/**/*.h"
+      - "Doxyfile"
+      - ".github/workflows/doxygen.yaml"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: DenverCoder1/doxygen-github-pages-action@v2.0.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: doxygen

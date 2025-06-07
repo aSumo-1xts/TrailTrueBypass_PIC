@@ -1,0 +1,38 @@
+{
+    "version": "1.5",
+    "configurations": [
+        {
+            "name": "default",
+            "id": "conf1",
+            "device": "PIC12F675",
+            "imagePath": "./out/PIC12F675/default.elf",
+            "packs": [
+                {
+                    "name": "PIC10-12Fxxx_DFP",
+                    "vendor": "Microchip",
+                    "version": "1.8.184"
+                }
+            ],
+            "fileSet": "default",
+            "toolchain": "default-XC8"
+        }
+    ],
+    "propertyGroups": [
+        {
+            "name": "default-XC8",
+            "type": "toolchain",
+            "provider": "microchip.toolchains:xc8@3.00",
+            "properties": {}
+        }
+    ],
+    "fileSets": [
+        {
+            "name": "default",
+            "files": [
+                {
+                    "include": "src/*|src/PIC12F6XX/*"
+                }
+            ]
+        }
+    ]
+}
