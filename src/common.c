@@ -162,6 +162,15 @@ void scanModeSw(void) {
  * トレイルモードの是非をスキャンしながらエフェクトON/OFFの割り込みを待つ
  */
 void bypass() {
+  // ポップノイズを逃がす処理
+  PhotoCoupler = true;           // フォトカプラでミュート
+  waitPhotoCoupler();            // PhotoCouplerの立ち上がりを待つ
+  for (int i = 0; i < 4; i++) {  // 必ず偶数回
+    Relay02 = !Relay02;          // Relay02をトグル
+    Relay01 = !Relay01;          // Relay01をトグル
+  }
+  PhotoCoupler = false;  // ミュート解除
+
   // この時点では、必ず isTrail==false かつ state==false であることに留意
   scanModeSw();  // まず最初にモードスイッチに合わせる
 
