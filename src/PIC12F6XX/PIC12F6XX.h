@@ -19,7 +19,7 @@
 #define Relay01 GP0       //!< Relayピンその1
 #define Relay02 GP1       //!< Relayピンその2
 #define PhotoCoupler GP2  //!< Relayピンその3
-#define FootSwitch !GP3   //!< FootSwitchピン（Momentary）
+#define FootSwitch GP3    //!< FootSwitchピン（Momentary）
 #define ModeSwitch GP4    //!< ModeSwitchピン（Alternate）
 #define LED GP5           //!< LEDピン
 
