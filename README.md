@@ -33,7 +33,7 @@ Coming soon?
 
 KiCad関連のファイル一式です。
 
-ガーバーファイルはReleaseからダウンロードできます。
+ガーバーファイルは[Release](https://github.com/aSumo-1xts/TrailTrueBypass_PIC/releases/tag/v.1.0)からダウンロードできます。
 
 ## dir: src
 
@@ -41,7 +41,7 @@ PICマイコン用のソースコード群です。
 
 プロジェクト管理の様式はVScode用のMPLAB Extension Packに準拠しています。
 
-コンパイル後のhexファイルはReleaseからダウンロードできます。
+コンパイル後のhexファイルは[Release](https://github.com/aSumo-1xts/TrailTrueBypass_PIC/releases/tag/v.1.0)からダウンロードできます。
 
 PICマイコン間で共通のソースコードはsrc直下に、そうでないものはそのハードウェアの名前の付いたディレクトリに入っています。
 
