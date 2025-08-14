@@ -4,6 +4,7 @@ KiCad/*.kicad_sch.lck
 KiCad/jlcpcb
 KiCad/TrailTrueBypass_PIC-backups
 _build
+.vscode/*.backup
 cmake
 out
 write_hex.ps1
