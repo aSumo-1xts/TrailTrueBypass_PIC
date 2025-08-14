@@ -6,6 +6,4 @@ KiCad/TrailTrueBypass_PIC-backups
 _build
 cmake
 out
-docs
-MPLABXLog.xml
 write_hex.ps1
